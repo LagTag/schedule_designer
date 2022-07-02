@@ -1,0 +1,29 @@
+AllCops: 
+  NewCops: enable
+  Exclude:
+    - 'db/schema.rb'
+
+Layout/LineLength:
+  Max: 200
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  IgnoredMethods: ["change"]
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/MethodLength:
+  IgnoredMethods: ["change", "cli_arg_version"]
+
+Metrics/CyclomaticComplexity:
+  IgnoredMethods: ["cli_arg_version"]
+
+Metrics/PerceivedComplexity:
+ IgnoredMethods: ["cli_arg_version"]
+
+Metrics/BlockLength:
+ Exclude:
+  - '**/spec/rails_helper.rb'
